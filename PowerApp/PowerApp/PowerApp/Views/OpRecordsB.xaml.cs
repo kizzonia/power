@@ -1,5 +1,4 @@
-﻿using PowerApp.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,12 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace PowerApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Home : ContentPage
+    public partial class OpRecordsB : ContentPage
     {
-        public Home()
+        public OpRecordsB()
         {
             InitializeComponent();
-            BindingContext = new HomeViewModel(this.Navigation);
         }
     }
 }

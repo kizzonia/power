@@ -1,5 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PowerApp.Views.Home">
+             x:Class="PowerApp.Views.Home"
+             BackgroundImage="main.png"
+             Title="Select Hydro Plant"
+             >
+    <ScrollView>
+    <StackLayout Padding="10,30,10,0"
+                >
+        <StackLayout VerticalOptions="Center"
+                     HorizontalOptions="Center"
+                     Padding="0,0,0,0"
+                     Margin="80,50,80,10">
+            <Image  Aspect="AspectFill" VerticalOptions="FillAndExpand" 
+			HorizontalOptions="FillAndExpand" Source="HAbtn.png">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding HydroACommand}" />
+                </Image.GestureRecognizers>
+            </Image>
+        </StackLayout>
+        <StackLayout VerticalOptions="Center"
+                     HorizontalOptions="Center"
+                     Padding="0,0,0,20"
+                     Margin="80,20,80,0">
+            <Image  Aspect="AspectFill" VerticalOptions="FillAndExpand" 
+			HorizontalOptions="FillAndExpand" Source="HBbtn.png">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding HydroBCommand}" />
+                </Image.GestureRecognizers>
+            </Image>
+        </StackLayout>
+    </StackLayout>
+    </ScrollView>
 </ContentPage>

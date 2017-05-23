@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PowerApp.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace PowerApp.Views
         public HydroB()
         {
             InitializeComponent();
+            BindingContext = new HydroBViewModel(this.Navigation);
         }
     }
 }

@@ -1,5 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PowerApp.Views.HydroB">
+             x:Class="PowerApp.Views.HydroB"
+               BackgroundImage="main.png"
+             Title="HydroB Records">
+    <ScrollView>
+        <StackLayout Padding="10,30,10,0"
+                >
+            <StackLayout VerticalOptions="Center"
+                     HorizontalOptions="Center"
+                     Padding="0,0,0,0"
+                     Margin="80,50,80,10">
+                <Image  Aspect="AspectFill" VerticalOptions="FillAndExpand" 
+			HorizontalOptions="FillAndExpand" Source="opB.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding OpRecordsBCommand}" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <StackLayout VerticalOptions="Center"
+                     HorizontalOptions="Center"
+                     Padding="0,0,0,20"
+                     Margin="80,20,80,0">
+                <Image  Aspect="AspectFill" VerticalOptions="FillAndExpand" 
+			HorizontalOptions="FillAndExpand" Source="SeBtn.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding SRecordsBCommand}" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
