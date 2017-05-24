@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PowerApp.Views.RelevantInformation"
+               Title="Relevant Information">
+    <ScrollView>
+        <StackLayout Padding="20">
+            <TableView Intent="Form" >
+                <TableRoot>
+                    <TableSection Title="Relevant Information">
+                        <SwitchCell Text="Forced Outage"/>
+                        <SwitchCell Text="Planned outage"/>
+                        <SwitchCell Text="Spillage"/>
+                        <EntryCell Label="Reservoir level at 08:00 hrs:"/>
+                        <EntryCell Label="Station Auxiliary Consumption:"/>
+                        <EntryCell Label="System Frequency at 06:00Hrs:"/>
+                        <EntryCell Label="Total Generation at 06:00Hrs (Today):"/>
+                        <EntryCell Label="Grid Peak Generation Yesterday (MW):"/>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+            <Button Text="Save"
+                        BackgroundColor="#4CAF50"
+                            TextColor="#FFFFFF" Clicked="Button_Clicked" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

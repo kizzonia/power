@@ -7,18 +7,15 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+
 namespace PowerApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SRecordsB : ContentPage
+    public partial class OPReports : TabbedPage
     {
-        public SRecordsB()
+        public OPReports()
         {
             InitializeComponent();
-        }
-        async private void ToolbarItem_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new SReports());
         }
     }
 }

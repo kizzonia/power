@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PowerApp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,17 @@ namespace PowerApp.Views
         public SRecords()
         {
             InitializeComponent();
+        }
+        async private void ToolbarItem_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SReports());
+        }
+        async void SRecordsListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem != null)
+            {
+                await Navigation.PushAsync(new SReports() { BindingContext = e.SelectedItem as Settlement_Record});
+            }
         }
     }
 }

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PowerApp.Views.StationServiceTransformer"
+              Title="Station Service Transformers">
+    <ScrollView>
+        <StackLayout Padding="20">
+            <TableView Intent="Form" >
+                <TableRoot>
+                    <TableSection Title="Station Service Transformers">
+                        <EntryCell Label="In Service / Available:"/>
+                        <EntryCell Label="Not Available:"/>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+            <Button Text="Save"
+                        BackgroundColor="#4CAF50"
+                            TextColor="#FFFFFF" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

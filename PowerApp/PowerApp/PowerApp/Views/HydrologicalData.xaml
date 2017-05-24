@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PowerApp.Views.HydrologicalData"
+             Title="HydrologicalData">
+    <ScrollView>
+        <StackLayout Padding="20">
+            <TableView Intent="Form" >
+                <TableRoot>
+                    <TableSection Title="Hydrological Data">
+                        <EntryCell Label="Head Water Level (meters):"/>
+                        <EntryCell Label="Tail Water Level (meters):"/>
+                        <EntryCell Label="Operating Head (meters):"/>
+                        <EntryCell Label="Computed Inflow (m3/s):"/>
+                        <EntryCell Label="Average Turbine Discharge (m3/s):"/>
+                        <EntryCell Label="Average Spillway Discharge (m3/s):"/>
+                        <EntryCell Label="Average Total Station Discharge (m3/s):"/>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+            <Button Text="Save" Clicked="Button_Clicked"
+                        BackgroundColor="#4CAF50"
+                            TextColor="#FFFFFF" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

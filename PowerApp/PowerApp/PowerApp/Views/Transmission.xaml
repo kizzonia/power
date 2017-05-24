@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PowerApp.Views.Transmission"
+             Title="Transmission">
+    <ScrollView>
+        <StackLayout Padding="20">
+            <TableView Intent="Form" >
+                <TableRoot>
+                    <TableSection Title="Transmission Data">
+                        <EntryCell Label="330 kV Transmission Line in Service:"/>
+                        <EntryCell Label="330 kV Switchyard Equipment Out of Service:"/>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+            <Button Text="Save"
+                        BackgroundColor="#4CAF50"
+                            TextColor="#FFFFFF" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

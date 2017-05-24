@@ -25,12 +25,12 @@ namespace PowerApp.ViewModels
 
         public void OpRecordsPage()
         {
-            Navigation.PushAsync(new OpRecords());
+            Navigation.PushAsync(new OPReports());
         }
 
         public void SRecordsPage()
         {
-            Navigation.PushAsync(new SRecords());
+            Navigation.PushAsync(new SReports());
         }
     }
 }

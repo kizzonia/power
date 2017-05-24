@@ -10,15 +10,17 @@ using Xamarin.Forms.Xaml;
 namespace PowerApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SRecordsB : ContentPage
+    public partial class Transmission : ContentPage
     {
-        public SRecordsB()
+        public Transmission()
         {
             InitializeComponent();
         }
-        async private void ToolbarItem_Clicked(object sender, EventArgs e)
+
+        private void Button_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SReports());
+            DisplayAlert("Successful", "Data as Been Uploaded Successfully", "Ok");
+
         }
     }
 }

@@ -41,11 +41,20 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\OPRecord.cs" />
+    <Compile Include="Models\Record.cs" />
+    <Compile Include="Models\Settlement_Master_Record.cs" />
+    <Compile Include="Models\Settlement_Record.cs" />
+    <Compile Include="Models\Time.cs" />
+    <Compile Include="Models\Turbine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\HomeViewModel.cs" />
     <Compile Include="ViewModels\HydroAViewModel.cs" />
     <Compile Include="ViewModels\HydroBViewModel.cs" />
+    <Compile Include="Views\GenerationData.xaml.cs">
+      <DependentUpon>GenerationData.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
@@ -61,11 +70,29 @@
     <Compile Include="Views\OpRecordsB.xaml.cs">
       <DependentUpon>OpRecordsB.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\OPReports.xaml.cs">
+      <DependentUpon>OPReports.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HydrologicalData.xaml.cs">
+      <DependentUpon>HydrologicalData.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RelevantInformation.xaml.cs">
+      <DependentUpon>RelevantInformation.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\SRecords.xaml.cs">
       <DependentUpon>SRecords.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\SRecordsB.xaml.cs">
       <DependentUpon>SRecordsB.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SReports.xaml.cs">
+      <DependentUpon>SReports.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StationServiceTransformer.xaml.cs">
+      <DependentUpon>StationServiceTransformer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Transmission.xaml.cs">
+      <DependentUpon>Transmission.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -114,9 +141,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Views\HydroB.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
@@ -129,6 +153,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="image\fab.png" />
     <Content Include="image\HAbtn.png" />
     <Content Include="image\HBbtn.png" />
     <Content Include="image\main.png" />
@@ -155,6 +180,48 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\SRecordsB.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\SReports.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\OPReports.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\HydrologicalData.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\GenerationData.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\RelevantInformation.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\StationServiceTransformer.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Transmission.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

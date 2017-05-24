@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PowerApp.Views.GenerationData"
+             Title="Generation Data">
+    <ScrollView>
+        <StackLayout Padding="20">
+            <TableView Intent="Form">
+                <TableRoot>
+                    <TableSection Title="Generation Data">
+                        <EntryCell Label="Total Generation (MWh):"/>
+                        <EntryCell Label="Units on load:"/>
+                        <EntryCell Label="Units Available:"/>
+                        <EntryCell Label="Computed Inflow (m3/s):"/>
+                        <EntryCell Label="Average Turbine Discharge (m3/s):"/>
+                        <EntryCell Label="Actual Generation Capability (MW):"/>
+                        <EntryCell Label="Available Installed Capacity (MW):"/>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+            <Button Text="Save"
+                        BackgroundColor="#4CAF50"
+                            TextColor="#FFFFFF" 
+                    Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
